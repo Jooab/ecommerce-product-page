@@ -1,0 +1,138 @@
+@media (max-width:920px) {
+    .principal-container {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .product-info .product-company {
+        text-align: center;
+    }
+
+    .product-info .product-title {
+        text-align: center;
+    }
+
+    body {
+        padding: 30px 0;
+    }
+
+    .menu {
+        padding: 0 20px 20px;
+    }
+}
+
+@media (max-width: 730px) {
+    body {
+        padding-top: 0;
+    }
+
+    .hamburguer-menu {
+        display: block;
+        position: absolute;
+        top: 40%;
+        z-index: 2;
+    }
+
+    .nav-list {
+        position: absolute;
+        padding: 100px 20px 20px;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        z-index: 1;
+        visibility: hidden;
+        justify-content: space-between;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 15px 16px 21px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .open-menu {
+        visibility: visible;
+    }
+
+    .nav-list li {
+        padding-bottom: 30px;
+    }
+
+    .menu {
+        padding: 15px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+}
+
+@media (max-width:425px) {
+    .principal-container {
+        padding: 0 0 50px;
+        display: block;
+    }
+
+    .product-thumbnails {
+        display: none;
+    }
+
+    .product-images {
+        max-width: 100%;
+    }
+
+    .product {
+        border-radius: 0%;
+    }
+
+    .product-info {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .arrow {
+        display: block;
+    }
+
+    .cart-request {
+        min-width: 90%;
+        top: 5px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .cart-request .cart-content .empty-cart-message {
+        font-weight: 600;
+        text-align: center;
+        padding: 45px;
+    }
+
+    .product-info .total-price {
+        position: absolute;
+        bottom: 190px;
+        right: 20px;
+    }
+
+    .product-info .shop-section {
+        flex-direction: column;
+    }
+
+    .product-info .shop-section .shop-quantity {
+        width: 100%;
+    }
+
+    .shop-section .add-cart-button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .product-info .product-description {
+        text-align: center;
+    }
+
+    .avatar-cart .avatar {
+        width: 30px;
+    }
+}

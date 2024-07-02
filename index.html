@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>Ecommerce Product Page</title>
+</head>
+
+<body>
+    <nav class="menu" id="menu">
+        <ul class="menu-sections">
+            <img src="src/images/icon-menu.svg" alt="Hamburguer Menu" class="hamburguer-menu" id="hamburguer-menu">
+            <img src="src/images/logo.svg" alt="Sneakers Logo" class="logo">
+            <div class="nav-list" id="nav-list">
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Woman</li>
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+        </ul>
+
+        <div class="avatar-cart">
+            <img src="src/images/icon-cart.svg" alt="Cart" class="cart" id="cart">
+            <img src="src/images/image-avatar.png" alt="Avatar" class="avatar">
+            <p class="cart-product-quantity" id="cart-product-quantity"></p>
+        </div>
+    </nav>
+
+    <main class="principal-container">
+        <div class="cart-request close" id="cart-request">
+            <div class="cart-title">
+                <h3>Cart</h3>
+            </div>
+            <div class="cart-content" id="cart-content">
+                <p class="empty-cart-message">Your cart is empty</p>
+            </div>
+        </div>
+
+        <div class="product-images">
+
+            <img src="src/images/icon-previous.svg" alt="Previous Button" class="left-arrow arrow" id="left-arrow">
+
+            <img src="src/images/image-product-0.jpg" alt="Product 1" class="product
+            principal">
+
+            <img src="src/images/icon-next.svg" alt="Right Arrow" class="right-arrow arrow" id="right-arrow">
+
+            <ul class="product-thumbnails">
+                <li class="product-thumbnail selected">
+                    <img src="src/images/image-product-0-thumbnail.jpg" alt="Product 1 thumbnail">
+                </li>
+                <li class="product-thumbnail">
+                    <img src="src/images/image-product-1-thumbnail.jpg" alt="Product 2 thumbnail">
+                </li>
+                <li class="product-thumbnail">
+                    <img src="src/images/image-product-2-thumbnail.jpg" alt="Product 3 thumbnail">
+                </li>
+                <li class="product-thumbnail">
+                    <img src="src/images/image-product-3-thumbnail.jpg" alt="Product 4 thumbnail">
+                </li>
+            </ul>
+        </div>
+
+        <div class="product-info">
+            <h2 class="product-company">Sneaker Company</h2>
+            <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+            <p class="product-description">These Iow-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they'll
+                withstand everything the weather can offer.</p>
+            <div class="price-discount">
+                <h2 class="price">$125.00</h2>
+                <p class="discount">50%</p>
+            </div>
+            <p class="total-price">$250.00</p>
+
+            <div class="shop-section">
+
+                <div class="shop-quantity">
+                    <button class="button" id="minus-button"><img src="src/images/icon-minus.svg"
+                            alt="Minus button"></button>
+                    <span class="product-quantity" id="product-quantity">0</span>
+                    <button class="button" id="plus-button"><img src="src/images/icon-plus.svg"
+                            alt="Plus button"></button>
+                </div>
+
+                <button class="add-cart-button" id="cart-button"><img src="src/images/icon-cart.svg"
+                        alt="Cart Button">Add to Cart</button>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

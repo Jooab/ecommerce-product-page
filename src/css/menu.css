@@ -1,0 +1,116 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(219, 9%, 45%);
+    border-bottom: 2px solid hsl(223, 64%, 98%);
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.menu-sections {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-sections li {
+    position: relative;
+}
+
+.menu-sections li:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.menu-sections li:hover::before {
+    display: block;
+}
+
+.menu-sections li::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+.avatar-cart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    gap: 25px;
+}
+
+.cart-product-quantity {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    color: #ffffff;
+    background-color: hsl(26, 100%, 55%);
+    font-size: 8px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.avatar-cart .cart:hover {
+    cursor: pointer;
+}
+
+.avatar-cart .avatar {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.avatar-cart .avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.cart-request {
+    min-width: 320px;
+    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.cart-request .cart-title {
+    border-bottom: 2px solid hsl(223, 64%, 98%);
+    padding: 20px 20px;
+    color: #000000;
+}
+
+.cart-request .cart-content {
+    padding: 20px;
+}
+
+.cart-request .cart-content .empty-cart-message {
+    font-weight: 600;
+    text-align: center;
+    padding: 70px;
+}
+
+.close {
+    display: none;
+}
+
+.hamburguer-menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}

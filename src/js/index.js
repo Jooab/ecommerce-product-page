@@ -12,6 +12,7 @@ const addToCardButton = document.getElementById('cart-button')
 const cartProductQuantity = document.getElementById('cart-product-quantity')
 const hamburguerMenu = document.getElementById('hamburguer-menu')
 const navList = document.getElementById('nav-list')
+const overlay = document.getElementById('overlay')
 
 function removeSelectedClassToAProductThumbnail(){
     const selectedProductThumbnail = document.querySelector('.product-thumbnail.selected')
@@ -97,8 +98,10 @@ hamburguerMenu.addEventListener('click', ()=>{
 
     if(navList.classList.contains('open-menu') === true){
         hamburguerMenu.src = "src/images/icon-close.svg"
+        overlay.style.display = "block"
     } else {
         hamburguerMenu.src = "src/images/icon-menu.svg"
+        overlay.style.display = "none"
     }
 })
 
